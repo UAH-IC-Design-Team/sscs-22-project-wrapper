@@ -9,3 +9,5 @@ ext2spice lvs
 ext2spice -o ./$1.spice
 quit -noprompt
 EOF
+
+cp ./$1.spice ../netgen/

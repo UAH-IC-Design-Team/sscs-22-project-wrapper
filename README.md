@@ -4,15 +4,6 @@
 
 ---
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
-
-## Please fill in your project documentation in this README.md file 
+**WARNING:** This repository uses git submodules and git sparse-checkout to manage the sub repositories.
 
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
-
----
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
