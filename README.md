@@ -5,5 +5,6 @@
 ---
 
 **WARNING:** This repository uses git submodules and git sparse-checkout to manage the sub repositories.
+Please run the bash script `./init_repo.sh` to properly initialize the sparse checkouts.
 
 
