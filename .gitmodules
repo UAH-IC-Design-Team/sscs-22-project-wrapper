@@ -1,6 +1,3 @@
-[submodule "mag/-b"]
-	path = mag/-b
-	url = https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC.git
 [submodule "mag/sky130-10-bit-SAR-ADC"]
 	path = mag/sky130-10-bit-SAR-ADC
 	url = https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC.git
