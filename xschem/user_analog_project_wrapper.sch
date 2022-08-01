@@ -104,3 +104,9 @@ C {devices/lab_pin.sym} 1000 -1000 0 1 {name=l39 sig_type=std_logic lab=io_out[9
 }
 C {devices/lab_pin.sym} 1000 -980 0 1 {name=l40 sig_type=std_logic lab=io_out[8]
 }
+C {devices/code.sym} 530 -490 0 0 {name=MODEL-INCLUDE
+only_toplevel=true
+format="tcleval( @value )"
+value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}

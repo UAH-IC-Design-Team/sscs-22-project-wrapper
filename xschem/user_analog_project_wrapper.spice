@@ -93,6 +93,10 @@ R8 vssd1 io_oeb[10] sky130_fd_pr__res_generic_m3 W=0.56 L=0.49 m=1
 R9 vssd1 io_oeb[8] sky130_fd_pr__res_generic_m3 W=0.56 L=0.31 m=1
 R11 vssd1 io_oeb[9] sky130_fd_pr__res_generic_m3 W=0.56 L=0.58 m=1
 x3 vccd1 vssd1 io_in[13] gpio_analog[6] gpio_analog[7] io_out[10] io_out[9] io_out[8] sar-adc
+**** begin user architecture code
+ .include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+**** end user architecture code
 .ends
 
 * expanding   symbol:  sky130-10-bit-SAR-ADC/xschem/src/sar-adc/sar-adc.sym # of pins=8
