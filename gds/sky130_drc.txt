@@ -2,7 +2,7 @@
 <report-database>
  <description>SKY130 DRC runset</description>
  <original-file/>
- <generator>drc: script='/headless/.klayout/drc/drc.lydrc'</generator>
+ <generator>drc: script='/headless/.klayout/drc/sky130A_mr_1.drc'</generator>
  <top-cell>user_analog_project_wrapper</top-cell>
  <tags>
  </tags>
