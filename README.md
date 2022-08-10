@@ -7,4 +7,8 @@
 **WARNING:** This repository uses git submodules and git sparse-checkout to manage the sub repositories.
 Please run the bash script `./init_repo.sh` to properly initialize the sparse checkouts.
 
+---
+# Scripts
+### Exporting LVS from Magic
+The script `./mag/extract.sh` will extract the LVS from magic and place it in the netgen folder as expected by the precheck.
 

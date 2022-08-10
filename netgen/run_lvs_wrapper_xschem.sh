@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../mag/user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper.spice user_analog_project_wrapper" $PDK_ROOT/$PDK/libs.tech/netgen/$PDK\_setup.tcl comp.out
+netgen -batch lvs "../mag/$1.spice $1" "../xschem/$1.spice $1" $PDK_ROOT/$PDK/libs.tech/netgen/$PDK\_setup.tcl comp.out
