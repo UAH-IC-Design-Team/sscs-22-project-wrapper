@@ -6,22 +6,22 @@ S {}
 E {}
 N 590 -890 590 -850 { lab=io_oeb[10]}
 N 590 -790 590 -770 { lab=vssd1}
-N 590 -750 590 -730 { lab=io_oeb[16]}
+N 590 -750 590 -730 { lab=io_oeb[8]}
 N 590 -670 590 -660 { lab=vssd1}
 N 1080 -890 1080 -860 { lab=io_oeb[9]}
 N 1080 -800 1080 -780 { lab=vssd1}
 N 550 -890 590 -890 { lab=io_oeb[10]}
 N 550 -770 590 -770 { lab=vssd1}
-N 550 -750 590 -750 { lab=io_oeb[16]}
+N 550 -750 590 -750 { lab=io_oeb[8]}
 N 550 -660 590 -660 { lab=vssd1}
 N 1050 -890 1080 -890 { lab=io_oeb[9]}
 N 1050 -780 1080 -780 { lab=vssd1}
 N 600 -1060 640 -1060 {
-lab=io_in[13]}
+lab=io_in[12]}
 N 600 -1040 640 -1040 {
 lab=gpio_analog[6]}
 N 600 -1020 640 -1020 {
-lab=gpio_analog[7]}
+lab=io_analog[0]}
 N 940 -1060 1000 -1060 {
 lab=vccd1}
 N 940 -1040 1000 -1040 {
@@ -32,6 +32,8 @@ N 940 -1000 1000 -1000 {
 lab=io_out[9]}
 N 940 -980 1000 -980 {
 lab=io_out[8]}
+N 600 -1000 640 -1000 {
+lab=io_analog[1]}
 C {devices/iopin.sym} 160 -1140 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 160 -1110 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 160 -1080 0 0 {name=p3 lab=vssa1}
@@ -92,11 +94,11 @@ C {sky130-10-bit-SAR-ADC/xschem/src/sar-adc/sar-adc.sym} 790 -1020 0 0 {name=x3}
 C {devices/lab_pin.sym} 1000 -1060 0 1 {name=l33 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 1000 -1040 2 0 {name=l34 sig_type=std_logic lab=vssd1
 }
-C {devices/lab_pin.sym} 600 -1060 0 0 {name=l35 sig_type=std_logic lab=io_in[13]
+C {devices/lab_pin.sym} 600 -1060 0 0 {name=l35 sig_type=std_logic lab=io_in[12]
 }
-C {devices/lab_pin.sym} 600 -1040 2 1 {name=l36 sig_type=std_logic lab=gpio_analog[6]
+C {devices/lab_pin.sym} 600 -1040 2 1 {name=l36 sig_type=std_logic lab=io_in[11]
 }
-C {devices/lab_pin.sym} 600 -1020 2 1 {name=l37 sig_type=std_logic lab=gpio_analog[7]
+C {devices/lab_pin.sym} 600 -1020 2 1 {name=l37 sig_type=std_logic lab=io_analog[0]
 }
 C {devices/lab_pin.sym} 1000 -1020 0 1 {name=l38 sig_type=std_logic lab=io_out[10]
 }
@@ -110,3 +112,5 @@ format="tcleval( @value )"
 value=".include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
+C {devices/lab_pin.sym} 600 -1000 2 1 {name=l1 sig_type=std_logic lab=io_analog[1]
+}
