@@ -27,17 +27,11 @@ void main()
     reg_mprj_datal = 0x00000000;
     reg_mprj_datah = 0x00000000;
 
-    // Configure mprj_io 10 and 25 as analog (digital in/out = off)
-    // Configure mprj_io 11, 12, 26, and 27 as digital output
-    // mprj_io 14 to 24 are analog pads and cannot be configured
-
-    reg_mprj_io_27 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_26 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_25 = GPIO_MODE_USER_STD_ANALOG;
-
-    reg_mprj_io_12 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_11 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_10 = GPIO_MODE_USER_STD_ANALOG;
+    reg_mprj_io_8  =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_9  =  GPIO_MODE_USER_STD_OUTPUT;		 
+    reg_mprj_io_10 =  GPIO_MODE_USER_STD_OUTPUT;		 
+    reg_mprj_io_11 =  GPIO_MODE_USER_STD_INPUT_NOPULL;
+    reg_mprj_io_12 =  GPIO_MODE_USER_STD_INPUT_NOPULL;
 
     /* Apply configuration */
     reg_mprj_xfer = 1;
