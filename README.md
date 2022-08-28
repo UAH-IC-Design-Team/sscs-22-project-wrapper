@@ -5,7 +5,7 @@
 ---
 
 **WARNING:** This repository uses `git submodules` and `git sparse-checkout` to manage the sub repositories.
-Please run the bash script `./init_repo.sh` to properly initialize the sparse checkouts.
+Please run the bash script `./init_repo.sh` to properly initialize the sparse checkouts for development. 
 
 ---
 
@@ -13,9 +13,12 @@ The following repository contains the `user_project_wrapper` that holds a 10b SA
 
 # Design Information
 ## Pin List
-The pin list for the SAR ADC can be found [here] (https://docs.google.com/spreadsheets/d/1W1POMTv0muYGoTeH6-UFIFluaF-aqXRq3irdcskvrYA/edit?usp=sharing).
+The pin list for the SAR ADC can be found [here](https://docs.google.com/spreadsheets/d/1W1POMTv0muYGoTeH6-UFIFluaF-aqXRq3irdcskvrYA/edit?usp=sharing).
 
-The pins are configued in `./caravel/verilog/rtl/user_defines.v`.
+The pins are configued in `./verilog/rtl/user_defines.v`.
+
+## Note on the SAR ADC output
+Since our design depends on an external clock overclocked above our sample rate, in an effort to conserve pin resources we are adding a small serializer to the output of our ADC to take the 10b parallel output bus and reduce it to a 2b serialized output. However, we will make use of the Caravel Logic Analyzer to access the 10b parallel output bus from the ADC. 
 
 ## Device List
 The following devices are currently being used in the SAR ADC.
@@ -46,11 +49,12 @@ sky130_stdcells/or3_2.sym
 sky130_stdcells/or4_2.sym
 sky130_stdcells/xor2_1.sym
 ```
-
-## Note on the SAR ADC output
-Since our design depends on an external clock overclocked above our sample rate, in an effort to conserve pin resources we are adding a small serializer to the output of our ADC to take the 10b parallel output bus and reduce it to a 2b serialized output.However, we will make use of the Caravel Logic Analyzer to access the 10b parallel output bus from the ADC. 
-
-# Scripts
-### Exporting LVS from Magic
-The script `./mag/extract.sh` will extract the LVS from magic and place it in the netgen folder as expected by the precheck.
+# Makefile
+A second Makefile, `Loc-Makefile` that containes targets (in conjunction with scripts) to run many common tasks including:
+- klayout_drc
+- extract_magic_lvs
+- extract_xschem_lvs
+- extract_gds
+- netgen_lvs
+- get_devices_used
 
