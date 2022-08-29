@@ -19,7 +19,7 @@ N 1050 -780 1080 -780 { lab=vssd1}
 N 600 -1060 640 -1060 {
 lab=io_in[12]}
 N 600 -1040 640 -1040 {
-lab=gpio_analog[6]}
+lab=io_in[11]}
 N 600 -1020 640 -1020 {
 lab=io_analog[0]}
 N 940 -1060 1000 -1060 {
@@ -73,14 +73,16 @@ model=res_generic_m3
 mult=1}
 C {sky130_fd_pr/res_generic_m1.sym} 590 -700 0 0 {name=R9
 W=0.56
-L=0.31
+L=0.49
 model=res_generic_m3
-mult=1}
+mult=1
+}
 C {sky130_fd_pr/res_generic_m1.sym} 1080 -830 0 0 {name=R11
 W=0.56
-L=0.58
+L=0.49
 model=res_generic_m3
-mult=1}
+mult=1
+}
 C {devices/lab_pin.sym} 550 -750 0 0 {name=l26 sig_type=std_logic lab=io_oeb[8]
 }
 C {devices/lab_pin.sym} 1050 -890 0 0 {name=l27 sig_type=std_logic lab=io_oeb[9]

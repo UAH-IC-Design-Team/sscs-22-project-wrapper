@@ -17,8 +17,14 @@ The pin list for the SAR ADC can be found [here](https://docs.google.com/spreads
 
 The pins are configued in `./verilog/rtl/user_defines.v`.
 
-## Note on the SAR ADC output
+### Note on the SAR ADC output
 Since our design depends on an external clock overclocked above our sample rate, in an effort to conserve pin resources we are adding a small serializer to the output of our ADC to take the 10b parallel output bus and reduce it to a 2b serialized output. However, we will make use of the Caravel Logic Analyzer to access the 10b parallel output bus from the ADC. 
+
+## Precheck Results
+The precheck results can be found in `./precheck.log`. 
+
+### Consistency Fail: SUBMODULE HOOKS
+The Consistency failure on Caravan is due to an issue in the precheck tracked in [this github issue](https://github.com/efabless/caravel/issues/105). Though the pull request for this fix has been merged, since a full release has not yet been published as of this writting we elected to continue on the `mpw7a` Caravel tag rather than potentially contest with new, undocumented issues. 
 
 ## Device List
 The following devices are currently being used in the SAR ADC.
