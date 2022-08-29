@@ -33,6 +33,7 @@ ifndef component
 	$(error component is not set)
 endif
 	cd ./mag; ./extract_lvs.sh $(component)
+	cp ./mag/$(component).spice ./netgen/
 
 
 # Extract the gds from magic
@@ -60,7 +61,7 @@ netgen_lvs:
 ifndef component
 	$(error component is not set)
 endif
-	netgen -batch lvs "./xschem/$(component).spice $(component)" "./mag/$(component).spice $(component)" ./netgen/sky130A_setup.tcl ./netgen/$(component)_comp.out
+	netgen -batch lvs "./mag/$(component).spice $(component)" "./xschem/$(component).spice $(component)" ./netgen/sky130A_setup.tcl ./netgen/$(component)_comp.out
 
 
 # Extract and run LVS for a given componet
