@@ -2,17 +2,23 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CI](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml) [![Caravan Build](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml)
 
----
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
-
-## Please fill in your project documentation in this README.md file 
-
-
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+# Initialization
 
 ---
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+**WARNING:** This repository uses `git submodules` and `git sparse-checkout` to manage the sub repositories.
+Please run the bash script `./init_repo.sh` to properly initialize the sparse checkouts for development. 
+
+---
+
+# Information
+The following Caravan wrapper contains the projects of team Austria, Brazil and USA1 for the 2022 Pico Chipathon. This Caravan is Chip 6 in the Chipathon. 
+
+Further information about each project can be found in their design repositories:
+ - [Austria - Sub-Sampling PLL](https://github.com/ChrisG1997/pll2022)
+ - [Brazil - 60GHz Demonstrator](https://github.com/LeoGalloGomes/sky130_60GHz_demonstrator_mockTO/tree/master)
+ - [USA1 - Low Power 10b SAR ADC](https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC)
+
+# Helpers
+A `Loc-Makefile` has been created to help fascilitate common operations such as GDS extraction, DRC and LVS. 
