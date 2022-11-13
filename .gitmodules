@@ -12,3 +12,17 @@
 [submodule "mag/pll2022"]
 	path = mag/pll2022
 	url = https://github.com/ChrisG1997/pll2022.git
+[submodule "gds/SSCS_PICO_tapeout"]
+	path = gds/SSCS_PICO_tapeout
+	url = https://github.com/LeoGalloGomes/SSCS_PICO_tapeout.git
+	branch = master
+[submodule "xschem/SSCS_PICO_tapeout"]
+	path = xschem/SSCS_PICO_tapeout
+	url = https://github.com/LeoGalloGomes/SSCS_PICO_tapeout.git
+[submodule "gds/sky130-10-bit-SAR-ADC"]
+	path = gds/sky130-10-bit-SAR-ADC
+	url = https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC.git
+[submodule "./xschem/sky130-10-bit-SAR-ADC"]
+	branch = dev
+[submodule "sky130-10-bit-SAR-ADC"]
+	branch = dev
