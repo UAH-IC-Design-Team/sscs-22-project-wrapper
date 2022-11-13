@@ -2,10 +2,6 @@
 	path = mag/sky130-10-bit-SAR-ADC
 	url = https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC.git
 	branch = dev
-[submodule "xschem/sky130-10-bit-SAR-ADC"]
-	path = xschem/sky130-10-bit-SAR-ADC
-	url = https://github.com/UAH-IC-Design-Team/sky130-10-bit-SAR-ADC.git
-	branch = dev
 [submodule "xschem/pll2022"]
 	path = xschem/pll2022
 	url = https://github.com/ChrisG1997/pll2022.git
