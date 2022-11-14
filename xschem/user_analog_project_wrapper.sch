@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=2.9.9 file_version=1.2 
 }
 G {}
 K {}
@@ -33,6 +33,23 @@ N 3870 -320 3910 -320 {
 lab=vccd2}
 N 3870 -300 3910 -300 {
 lab=vssd2}
+N 3970 410 3990 410 { lab=#net1}
+N 4290 410 4310 410 { lab=#net2}
+N 3590 280 3610 280 { lab=#net3}
+N 3910 280 3930 280 { lab=#net4}
+N 3970 70 3990 70 { lab=#net5}
+N 4290 70 4310 70 { lab=#net6}
+N 4140 150 4140 170 { lab=#net7}
+N 3830 160 3830 200 { lab=io_analog[8]}
+N 3760 160 3760 200 { lab=io_analog[5]}
+N 3660 160 3660 200 { lab=io_analog[7]}
+N 3760 360 3760 400 { lab=io_analog[6]}
+N 4080 300 4080 340 { lab=io_analog[2]}
+N 4200 300 4200 340 { lab=io_analog[3]}
+N 4140 480 4140 520 { lab=io_analog[4]}
+N 4220 -50 4220 -10 { lab=vssd1}
+N 4140 -50 4140 -10 { lab=vdda1}
+N 4060 -50 4060 -10 { lab=vdda1}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -95,4 +112,34 @@ C {devices/lab_pin.sym} 3910 -350 2 0 {name=l2 sig_type=std_logic lab=vssd2
 C {devices/lab_pin.sym} 3910 -320 2 0 {name=l1 sig_type=std_logic lab=vccd2
 }
 C {devices/lab_pin.sym} 3910 -300 2 0 {name=l2 sig_type=std_logic lab=vssd2
+}
+C {/home/leonardo/sky130_projects/SSCS_PICO_tapeout/LNA_Vband/xschem/LNA_final.sym} 4140 410 0 0 {name=x4}
+C {/home/leonardo/sky130_projects/SSCS_PICO_tapeout/Switch_tapeout/xschem/RF_switch.sym} 4140 70 0 0 {name=x6}
+C {devices/noconn.sym} 3970 410 0 0 {name=l3}
+C {devices/noconn.sym} 4310 410 2 0 {name=l4}
+C {devices/noconn.sym} 3590 280 0 0 {name=l5}
+C {devices/noconn.sym} 3930 280 2 0 {name=l6}
+C {devices/noconn.sym} 3970 70 0 0 {name=l7}
+C {devices/noconn.sym} 4310 70 2 0 {name=l8}
+C {devices/noconn.sym} 4140 170 3 0 {name=l9}
+C {devices/lab_pin.sym} 3830 160 1 0 {name=l10 sig_type=std_logic lab=io_analog[8]
+}
+C {/home/leonardo/sky130_projects/SSCS_PICO_tapeout/VGA_tapeout/xschem/VGA_final.sym} 3760 280 0 0 {name=x5}
+C {devices/lab_pin.sym} 3760 160 1 0 {name=l11 sig_type=std_logic lab=io_analog[5]
+}
+C {devices/lab_pin.sym} 3660 160 1 0 {name=l12 sig_type=std_logic lab=io_analog[7]
+}
+C {devices/lab_pin.sym} 3760 400 3 0 {name=l13 sig_type=std_logic lab=io_analog[6]
+}
+C {devices/lab_pin.sym} 4080 300 1 0 {name=l14 sig_type=std_logic lab=io_analog[2]
+}
+C {devices/lab_pin.sym} 4200 300 1 0 {name=l15 sig_type=std_logic lab=io_analog[3]
+}
+C {devices/lab_pin.sym} 4140 520 3 0 {name=l16 sig_type=std_logic lab=io_analog[4]
+}
+C {devices/lab_pin.sym} 4220 -50 1 0 {name=l17 sig_type=std_logic lab=vssd1
+}
+C {devices/lab_pin.sym} 4140 -50 1 0 {name=l18 sig_type=std_logic lab=vdda1
+}
+C {devices/lab_pin.sym} 4060 -50 1 0 {name=l19 sig_type=std_logic lab=gpio_analog[0]
 }
