@@ -24,6 +24,24 @@ endif
 	@echo "Number of drc errors:"
 	@grep -o 'item' ./klayout/drc_reports/$(component).xml | wc -l | xargs -n 1 bash -c 'echo $$((($$1-2)/2))' args
 
+.PHONY: klayout_pin_label
+klayout_pin_label:
+ifndef component
+	$(error component is not set)
+endif
+	klayout -b -r ./klayout/pin_label_purposes_overlapping_drawing.rb.drc -rd input=./gds/$(component).gds -rd report=../klayout/drc_reports/$(component)_pin_label.xml -rd top_cell_name=$(component)
+	@echo "Number of drc errors:"
+	@grep -o 'item' ./klayout/drc_reports/$(component)_pin_label.xml | wc -l | xargs -n 1 bash -c 'echo $$((($$1-2)/2))' args
+
+.PHONY: klayout_drc_offgrid
+klayout_drc_offgrid:
+ifndef component
+	$(error component is not set)
+endif
+	klayout -b -r ./klayout/sky130A_mr.drc -rd input=./gds/$(component).gds -rd report=../klayout/drc_reports/$(component)_offgrid.xml -rd offgrid=true
+	@echo "Number of drc errors:"
+	@grep -o 'item' ./klayout/drc_reports/$(component)_offgrid.xml | wc -l | xargs -n 1 bash -c 'echo $$((($$1-2)/2))' args
+
 .PHONY: klayout_drc
 klayout_drc:
 ifndef component
