@@ -1257,168 +1257,28 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>Switch</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>r270 *1 2676.545,1061.205</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>Standalone_mosfet_32f$1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>r90 *1 936.15,1916.99</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>Standalone_mosfet_32f</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>user_analog_project_wrapper</parent>
-     <trans>r90 *1 2149.595,1121.48</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
   <item>
    <tags/>
-   <category>'poly.1a'</category>
-   <cell>Switch</cell>
+   <category>'m3.1'</category>
+   <cell>user_analog_project_wrapper</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>edge-pair: (-0.001,-0.001;-0.001,0.001)|(0.001,0.001;0.001,-0.001)</value>
+    <value>edge-pair: (2260.44,1873.785;2260.44,1874.085)|(2260.44,1874.085;2260.74,1874.085)</value>
    </values>
   </item>
   <item>
    <tags/>
-   <category>'poly.1a'</category>
-   <cell>Switch</cell>
+   <category>'m3.1'</category>
+   <cell>user_analog_project_wrapper</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>edge-pair: (0.001,-0.001;-0.001,-0.001)|(-0.001,0.001;0.001,0.001)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>poly_OFFGRID</category>
-   <cell>Switch</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-0.001,0.001;-0.001,0.001)/(-0.001,0.001;-0.001,0.001)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>poly_OFFGRID</category>
-   <cell>Switch</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (0.001,0.001;0.001,0.001)/(0.001,0.001;0.001,0.001)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>poly_OFFGRID</category>
-   <cell>Switch</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (0.001,-0.001;0.001,-0.001)/(0.001,-0.001;0.001,-0.001)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>poly_OFFGRID</category>
-   <cell>Switch</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-0.001,-0.001;-0.001,-0.001)/(-0.001,-0.001;-0.001,-0.001)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f$1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (4.705,-21.756;4.705,-21.756)/(4.705,-21.756;4.705,-21.756)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f$1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.599,-21.756;-17.599,-21.756)/(-17.599,-21.756;-17.599,-21.756)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f$1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.599,-42.84;-17.599,-42.84)/(-17.599,-42.84;-17.599,-42.84)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (4.705,-21.756;4.705,-21.756)/(4.705,-21.756;4.705,-21.756)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.599,-21.756;-17.599,-21.756)/(-17.599,-21.756;-17.599,-21.756)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>m1_OFFGRID</category>
-   <cell>Standalone_mosfet_32f</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.599,-42.84;-17.599,-42.84)/(-17.599,-42.84;-17.599,-42.84)</value>
+    <value>edge-pair: (2274.46,1873.675;2274.46,1873.975)|(2274.46,1873.975;2274.76,1873.975)</value>
    </values>
   </item>
  </items>

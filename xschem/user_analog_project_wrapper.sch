@@ -82,26 +82,44 @@ N 1050 -350 1070 -350 {
 lab=out_unbuf}
 N 1220 -350 1240 -350 {
 lab=io_analog[1]}
-N 1550 -460 1640 -460 {
+N 1630 -360 1630 -330 {
 lab=ref_in_esd_protected}
-N 1610 -460 1610 -440 {
+N 1630 -270 1630 -250 {
+lab=vssa1}
+N 1630 -440 1630 -420 {
+lab=vdda1}
+N 1890 -360 1890 -330 {
+lab=io_analog[0]}
+N 1890 -270 1890 -250 {
+lab=vssa1}
+N 1890 -440 1890 -420 {
+lab=vdda1}
+N 1630 -350 1750 -350 {
 lab=ref_in_esd_protected}
-N 1700 -460 1750 -460 {
+N 1810 -350 1890 -350 {
 lab=io_analog[0]}
-N 1750 -460 1750 -430 {
+N 1610 -350 1630 -350 {
+lab=ref_in_esd_protected}
+N 1890 -350 1910 -350 {
 lab=io_analog[0]}
-N 1750 -460 1780 -460 {
-lab=io_analog[0]}
-N 1610 -140 1610 -120 {
+N 1630 -250 1630 -220 {
+lab=vssa1}
+N 1630 -220 1890 -220 {
+lab=vssa1}
+N 1890 -250 1890 -220 {
+lab=vssa1}
+N 1780 -220 1780 -210 {
+lab=vssa1}
+N 1630 -450 1630 -440 {
 lab=vdda1}
-N 1750 -130 1750 -110 {
+N 1630 -450 1890 -450 {
 lab=vdda1}
-N 1590 -140 1590 -120 {
-lab=vssa1}
-N 1730 -130 1730 -110 {
-lab=vssa1}
-N 1670 -440 1670 -430 {
-lab=vssa1}
+N 1890 -450 1890 -440 {
+lab=vdda1}
+N 1780 -470 1780 -460 {
+lab=vdda1}
+N 1780 -460 1780 -450 {
+lab=vdda1}
 C {devices/iopin.sym} 60 -1220 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 60 -1190 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 60 -1160 0 0 {name=p3 lab=vssa1}
@@ -192,20 +210,14 @@ C {devices/lab_pin.sym} 1360 -880 1 0 {name=l18 sig_type=std_logic lab=vdda1
 }
 C {devices/lab_pin.sym} 1280 -880 1 0 {name=l19 sig_type=std_logic lab=gpio_analog[0]
 }
-C {SSCS_PICO_tapeout/VGA_tapeout/xschem/VGA_final.sym} 540 -760 0 0 {name=x7}
+C {SSCS_PICO_tapeout/VGA_tapeout/xschem/VGA_final.sym} 540 -760 0 0 {name=x7
+spice_stop="true"}
 C {SSCS_PICO_tapeout/Switch_tapeout/xschem/RF_switch.sym} 1360 -760 0 0 {name=x5}
 C {SSCS_PICO_tapeout/LNA_Vband/xschem/LNA_final.sym} 950 -760 0 0 {name=x6}
 C {devices/title.sym} 160 30 0 0 {name=l1 author="Austria, Brazil, USA1"
 }
 C {pll2022/xschem/full_IC_1.sym} 540 -350 0 0 {name=x4}
 C {pll2022/xschem/out_buf.sym} 1070 -340 0 0 {name=x8}
-C {sky130_fd_pr/res_iso_pw.sym} 1670 -460 3 0 {name=R2
-rho=3050
-W=2.00
-L=10.53
-model=res_iso_pw
-spiceprefix=X
-mult=1}
 C {devices/lab_pin.sym} 730 -440 2 0 {name=l1 sig_type=std_logic lab=vdda1
 }
 C {devices/lab_pin.sym} 730 -420 2 0 {name=l1 sig_type=std_logic lab=vssa1
@@ -234,19 +246,44 @@ C {devices/lab_pin.sym} 1050 -350 0 0 {name=l1 sig_type=std_logic lab=out_unbuf
 }
 C {devices/lab_pin.sym} 1240 -350 2 0 {name=l1 sig_type=std_logic lab=io_analog[1]
 }
-C {sky130-10-bit-SAR-ADC/xschem/src/esd_diodes/esd_diodes.sym} 1600 -290 1 0 {name=x9}
-C {devices/lab_pin.sym} 1550 -460 0 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
+C {devices/code.sym} 310 -170 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="*.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}
+C {sky130_fd_pr/diode.sym} 1630 -390 0 0 {name=D1
+model=diode_pw2nd_05v5
+area=16
+pj=16
 }
-C {sky130-10-bit-SAR-ADC/xschem/src/esd_diodes/esd_diodes.sym} 1740 -280 1 0 {name=x10}
-C {devices/lab_pin.sym} 1780 -460 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]
+C {sky130_fd_pr/diode.sym} 1630 -300 0 0 {name=D2
+model=diode_pw2nd_05v5
+area=16
+pj=16
 }
-C {devices/lab_pin.sym} 1610 -120 3 0 {name=l1 sig_type=std_logic lab=vdda1
+C {sky130_fd_pr/diode.sym} 1890 -390 0 0 {name=D3
+model=diode_pw2nd_05v5
+area=16
+pj=16
 }
-C {devices/lab_pin.sym} 1750 -110 3 0 {name=l1 sig_type=std_logic lab=vdda1
+C {sky130_fd_pr/diode.sym} 1890 -300 0 0 {name=D4
+model=diode_pw2nd_05v5
+area=16
+pj=16
 }
-C {devices/lab_pin.sym} 1590 -120 3 0 {name=l1 sig_type=std_logic lab=vssa1
+C {devices/lab_pin.sym} 1910 -350 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]
 }
-C {devices/lab_pin.sym} 1730 -110 3 0 {name=l1 sig_type=std_logic lab=vssa1
+C {devices/lab_pin.sym} 1610 -350 0 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
 }
-C {devices/lab_pin.sym} 1670 -430 3 0 {name=l1 sig_type=std_logic lab=vssa1
+C {devices/lab_pin.sym} 1780 -210 3 0 {name=l1 sig_type=std_logic lab=vssa1
+}
+C {devices/lab_pin.sym} 1780 -470 1 0 {name=l1 sig_type=std_logic lab=vdda1
+}
+C {sky130_fd_pr/res_generic_po.sym} 1780 -350 1 0 {name=R2
+W=2.00
+L=10.53
+model=res_generic_po
+mult=1
 }
