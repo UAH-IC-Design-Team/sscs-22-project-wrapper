@@ -1259,27 +1259,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'m3.1'</category>
-   <cell>user_analog_project_wrapper</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (2260.44,1873.785;2260.44,1874.085)|(2260.44,1874.085;2260.74,1874.085)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.1'</category>
-   <cell>user_analog_project_wrapper</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (2274.46,1873.675;2274.46,1873.975)|(2274.46,1873.975;2274.76,1873.975)</value>
-   </values>
-  </item>
  </items>
 </report-database>

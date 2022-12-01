@@ -99,17 +99,14 @@ x6 io_analog[3] io_analog[2] net1 net2 io_analog[4] LNA_final
 x4 vdda1 vssa1 ref_in_esd_protected io_out[13] io_in[12] io_in[11] io_in[10] io_in[9] io_in[8]
 + out_unbuf full_IC_1
 x8 vdda1 io_analog[1] out_unbuf vssa1 out_buf
-D1 ref_in_esd_protected vdda1 sky130_fd_pr__diode_pw2nd_05v5 area=16 pj=16
-D2 vssa1 ref_in_esd_protected sky130_fd_pr__diode_pw2nd_05v5 area=16 pj=16
-D3 io_analog[0] vdda1 sky130_fd_pr__diode_pw2nd_05v5 area=16 pj=16
-D4 vssa1 io_analog[0] sky130_fd_pr__diode_pw2nd_05v5 area=16 pj=16
-R2 ref_in_esd_protected io_analog[0] sky130_fd_pr__res_generic_po W=2.00 L=10.53 m=1
 x9 net8 net9 net10 Standalone_mosfet_32f
 x10 net11 net12 net13 Standalone_mosfet_32f
 x11 net14 net15 net16 Standalone_mosfet_150f
 x12 net17 net18 net19 Standalone_mosfet_150f
 x13 net20 net21 net22 net23 Cascode_Amp
 x14 net24 net25 net26 net27 Cascode_Amp
+x15 ref_in_esd_protected vdda1 vssa1 io_analog[0] esd
+R1 vssd1 vssa1 sky130_fd_pr__res_generic_m3 W=36.35 L=17.0 m=1
 **** begin user architecture code
  *.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
@@ -204,6 +201,17 @@ D2 VSS in sky130_fd_pr__diode_pw2nd_05v5 area=16 pj=16
 ** sch_path: /foss/designs/sscs-22-project-wrapper/xschem/Cascode_Amp.sch
 .subckt Cascode_Amp Vgg_1v8 RF_out RF_in gnd
 *.PININFO Vgg_1v8:B RF_out:B RF_in:B gnd:B
+.ends
+
+
+* expanding   symbol:  pll2022/xschem/esd.sym # of pins=4
+** sym_path: /foss/designs/sscs-22-project-wrapper/xschem/pll2022/xschem/esd.sym
+** sch_path: /foss/designs/sscs-22-project-wrapper/xschem/pll2022/xschem/esd.sch
+.subckt esd in vdd vss out
+*.PININFO vdd:B vss:B in:B out:B
+R1 out in sky130_fd_pr__res_generic_po W=2 L=10.53 m=1
+x1 in vdd vss esd_diodes
+x2 out vdd vss esd_diodes
 .ends
 
 .end
