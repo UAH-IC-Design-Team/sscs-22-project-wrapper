@@ -214,16 +214,9 @@ C {devices/lab_pin.sym} 1050 -350 0 0 {name=l1 sig_type=std_logic lab=out_unbuf
 }
 C {devices/lab_pin.sym} 1240 -350 2 0 {name=l1 sig_type=std_logic lab=io_analog[1]
 }
-C {devices/code.sym} 310 -170 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="*.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
-"
-spice_ignore=false}
-C {devices/lab_pin.sym} 1440 -190 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]
+C {devices/lab_pin.sym} 1280 -190 0 0 {name=l1 sig_type=std_logic lab=io_analog[0]
 }
-C {devices/lab_pin.sym} 1280 -190 0 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
+C {devices/lab_pin.sym} 1440 -190 2 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
 }
 C {devices/lab_pin.sym} 1360 -150 3 0 {name=l1 sig_type=std_logic lab=vssa1
 }

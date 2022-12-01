@@ -99,11 +99,8 @@ x11 net14 net15 net16 Standalone_mosfet_150f
 x12 net17 net18 net19 Standalone_mosfet_150f
 x13 net20 net21 net22 net23 Cascode_Amp
 x14 net24 net25 net26 net27 Cascode_Amp
-x15 ref_in_esd_protected vdda1 vssa1 io_analog[0] esd
+x15 io_analog[0] vdda1 vssa1 ref_in_esd_protected esd
 R1 vssd1 vssa1 sky130_fd_pr__res_generic_m3 W=36.35 L=17.0 m=1
- *.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
 .ends
 
 .subckt sar_adc VDD VSS RESET Clk V_in_p V_in_n Done Bit10 Bit9 Bit8 Bit7 Bit6 Bit5 Bit4 Bit3 Bit2
