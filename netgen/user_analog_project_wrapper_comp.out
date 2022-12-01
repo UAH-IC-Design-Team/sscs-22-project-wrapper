@@ -84,11 +84,11 @@ Cell pin lists are equivalent.
 Device classes Cascode_Amp and Cascode_Amp are equivalent.
 Flattening unmatched subcell controller in circuit sar_adc (0)(1 instance)
 Flattening unmatched subcell sky130_fd_sc_hd__and2_0 in circuit sar_adc (0)(23 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__clkdlybuf4s25_1 in circuit sar_adc (0)(16 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__dfstp_1 in circuit sar_adc (0)(16 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkdlybuf4s25_1 in circuit sar_adc (0)(16 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__xor2_1 in circuit sar_adc (0)(9 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1 in circuit sar_adc (0)(78 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit sar_adc (0)(37 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1 in circuit sar_adc (0)(78 instances)
 Flattening unmatched subcell sky130_ef_sc_hd__decap_12 in circuit sar_adc (0)(142 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_1 in circuit sar_adc (0)(74 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_2 in circuit sar_adc (0)(12 instances)
@@ -223,21 +223,14 @@ Cell pin lists are equivalent.
 Device classes LNA_final and LNA_final are equivalent.
 Flattening unmatched subcell r2r_8 in circuit full_IC_1 (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_DZGNGK in circuit full_IC_1 (0)(6 instances)
-Flattening unmatched subcell inv_buffer2 in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell inv_simple2 in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell sinv2_p in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell sinv2_n in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell inv_simple1 in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell sinv_p in circuit full_IC_1 (0)(4 instances)
-Flattening unmatched subcell sinv_n in circuit full_IC_1 (0)(4 instances)
 Flattening unmatched subcell slopebuf in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell inv_buffer2 in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell inv_simple2 in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell sinv2_p in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell sinv2_n in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell inv_simple1 in circuit full_IC_1 (0)(2 instances)
-Flattening unmatched subcell sinv_p in circuit full_IC_1 (0)(2 instances)
-Flattening unmatched subcell sinv_n in circuit full_IC_1 (0)(3 instances)
+Flattening unmatched subcell inv_buffer2 in circuit full_IC_1 (0)(5 instances)
+Flattening unmatched subcell inv_simple2 in circuit full_IC_1 (0)(5 instances)
+Flattening unmatched subcell sinv2_p in circuit full_IC_1 (0)(5 instances)
+Flattening unmatched subcell sinv2_n in circuit full_IC_1 (0)(5 instances)
+Flattening unmatched subcell inv_simple1 in circuit full_IC_1 (0)(6 instances)
+Flattening unmatched subcell sinv_p in circuit full_IC_1 (0)(6 instances)
+Flattening unmatched subcell sinv_n in circuit full_IC_1 (0)(7 instances)
 Flattening unmatched subcell slope_p in circuit full_IC_1 (0)(1 instance)
 Flattening unmatched subcell cap100f in circuit full_IC_1 (0)(1 instance)
 Flattening unmatched subcell tgate_1 in circuit full_IC_1 (0)(3 instances)
@@ -251,9 +244,9 @@ Flattening unmatched subcell sinv_p2 in circuit full_IC_1 (0)(1 instance)
 Flattening unmatched subcell r2r_10 in circuit full_IC_1 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_97D7UQ in circuit full_IC_1 (0)(2 instances)
 Flattening unmatched subcell wrapper in circuit full_IC_1 (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1$1 in circuit full_IC_1 (0)(215 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_2 in circuit full_IC_1 (0)(15 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__decap_3$1 in circuit full_IC_1 (0)(235 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_2 in circuit full_IC_1 (0)(15 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfrtp_1$1 in circuit full_IC_1 (0)(215 instances)
 Flattening unmatched subcell sky130_ef_sc_hd__decap_12$1 in circuit full_IC_1 (0)(558 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__decap_4$1 in circuit full_IC_1 (0)(773 instances)
 Flattening unmatched subcell sky130_fd_sc_hd__decap_6$1 in circuit full_IC_1 (0)(268 instances)
@@ -1080,6 +1073,8 @@ Cell user_analog_project_wrapper (0) disconnected node: io_oeb[7]
 Cell user_analog_project_wrapper (0) disconnected node: io_oeb[8]
 Cell user_analog_project_wrapper (0) disconnected node: io_in_3v3[5]
 Cell user_analog_project_wrapper (0) disconnected node: io_out[0]
+Cell user_analog_project_wrapper (0) disconnected node: signal
+Cell user_analog_project_wrapper (0) disconnected node: gnd2
 Cell user_analog_project_wrapper (1) disconnected node: vdda2
 Cell user_analog_project_wrapper (1) disconnected node: vssa2
 Cell user_analog_project_wrapper (1) disconnected node: vccd1
@@ -2396,6 +2391,8 @@ io_oeb[7]                                                                       
 io_oeb[8]                                                                         |io_oeb[8]                                                                         
 io_in_3v3[5]                                                                      |io_in_3v3[5]                                                                      
 io_out[0]                                                                         |io_out[0]                                                                         
+signal                                                                            |(no matching pin)                                                                 
+gnd2                                                                              |(no matching pin)                                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes user_analog_project_wrapper and user_analog_project_wrapper are equivalent.
