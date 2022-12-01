@@ -82,44 +82,12 @@ N 1050 -350 1070 -350 {
 lab=out_unbuf}
 N 1220 -350 1240 -350 {
 lab=io_analog[1]}
-N 1630 -360 1630 -330 {
-lab=ref_in_esd_protected}
-N 1630 -270 1630 -250 {
+N 1440 -860 1540 -860 {
+lab=vssd1}
+N 1540 -880 1540 -860 {
+lab=vssd1}
+N 1540 -960 1540 -940 {
 lab=vssa1}
-N 1630 -440 1630 -420 {
-lab=vdda1}
-N 1890 -360 1890 -330 {
-lab=io_analog[0]}
-N 1890 -270 1890 -250 {
-lab=vssa1}
-N 1890 -440 1890 -420 {
-lab=vdda1}
-N 1630 -350 1750 -350 {
-lab=ref_in_esd_protected}
-N 1810 -350 1890 -350 {
-lab=io_analog[0]}
-N 1610 -350 1630 -350 {
-lab=ref_in_esd_protected}
-N 1890 -350 1910 -350 {
-lab=io_analog[0]}
-N 1630 -250 1630 -220 {
-lab=vssa1}
-N 1630 -220 1890 -220 {
-lab=vssa1}
-N 1890 -250 1890 -220 {
-lab=vssa1}
-N 1780 -220 1780 -210 {
-lab=vssa1}
-N 1630 -450 1630 -440 {
-lab=vdda1}
-N 1630 -450 1890 -450 {
-lab=vdda1}
-N 1890 -450 1890 -440 {
-lab=vdda1}
-N 1780 -470 1780 -460 {
-lab=vdda1}
-N 1780 -460 1780 -450 {
-lab=vdda1}
 C {devices/iopin.sym} 60 -1220 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 60 -1190 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 60 -1160 0 0 {name=p3 lab=vssa1}
@@ -253,37 +221,46 @@ value="*.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
-C {sky130_fd_pr/diode.sym} 1630 -390 0 0 {name=D1
-model=diode_pw2nd_05v5
-area=16
-pj=16
+C {devices/lab_pin.sym} 1440 -190 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]
 }
-C {sky130_fd_pr/diode.sym} 1630 -300 0 0 {name=D2
-model=diode_pw2nd_05v5
-area=16
-pj=16
+C {devices/lab_pin.sym} 1280 -190 0 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
 }
-C {sky130_fd_pr/diode.sym} 1890 -390 0 0 {name=D3
-model=diode_pw2nd_05v5
-area=16
-pj=16
+C {devices/lab_pin.sym} 1360 -150 3 0 {name=l1 sig_type=std_logic lab=vssa1
 }
-C {sky130_fd_pr/diode.sym} 1890 -300 0 0 {name=D4
-model=diode_pw2nd_05v5
-area=16
-pj=16
+C {devices/lab_pin.sym} 1360 -230 1 0 {name=l1 sig_type=std_logic lab=vdda1
 }
-C {devices/lab_pin.sym} 1910 -350 2 0 {name=l1 sig_type=std_logic lab=io_analog[0]
+C {Standalone_mosfet_32f.sym} 1750 -630 0 0 {name=x9}
+C {Standalone_mosfet_32f.sym} 2070 -630 0 0 {name=x10}
+C {Standalone_mosfet_150f.sym} 1750 -730 0 0 {name=x11}
+C {Standalone_mosfet_150f.sym} 2070 -730 0 0 {name=x12}
+C {devices/noconn.sym} 1900 -750 2 0 {name=l1}
+C {devices/noconn.sym} 1900 -730 2 0 {name=l2}
+C {devices/noconn.sym} 1900 -710 2 0 {name=l10}
+C {devices/noconn.sym} 1900 -650 2 0 {name=l11}
+C {devices/noconn.sym} 1900 -630 2 0 {name=l12}
+C {devices/noconn.sym} 1900 -610 2 0 {name=l13}
+C {devices/noconn.sym} 2220 -750 2 0 {name=l14}
+C {devices/noconn.sym} 2220 -730 2 0 {name=l15}
+C {devices/noconn.sym} 2220 -710 2 0 {name=l16}
+C {devices/noconn.sym} 2220 -650 2 0 {name=l17}
+C {devices/noconn.sym} 2220 -630 2 0 {name=l18}
+C {devices/noconn.sym} 2220 -610 2 0 {name=l19}
+C {Cascode_Amp.sym} 1750 -840 0 0 {name=x13}
+C {Cascode_Amp.sym} 2070 -840 0 0 {name=x14}
+C {devices/noconn.sym} 1900 -870 2 0 {name=l20}
+C {devices/noconn.sym} 1900 -850 2 0 {name=l21}
+C {devices/noconn.sym} 1900 -830 2 0 {name=l22}
+C {devices/noconn.sym} 1900 -810 2 0 {name=l23}
+C {devices/noconn.sym} 2220 -870 2 0 {name=l24}
+C {devices/noconn.sym} 2220 -850 2 0 {name=l25}
+C {devices/noconn.sym} 2220 -830 2 0 {name=l26}
+C {devices/noconn.sym} 2220 -810 2 0 {name=l27}
+C {pll2022/xschem/esd.sym} 1260 -90 0 0 {name=x15}
+C {devices/lab_pin.sym} 1540 -960 1 0 {name=l28 sig_type=std_logic lab=vssa1
 }
-C {devices/lab_pin.sym} 1610 -350 0 0 {name=l1 sig_type=std_logic lab=ref_in_esd_protected
-}
-C {devices/lab_pin.sym} 1780 -210 3 0 {name=l1 sig_type=std_logic lab=vssa1
-}
-C {devices/lab_pin.sym} 1780 -470 1 0 {name=l1 sig_type=std_logic lab=vdda1
-}
-C {sky130_fd_pr/res_generic_po.sym} 1780 -350 1 0 {name=R2
-W=2.00
-L=10.53
-model=res_generic_po
+C {sky130_fd_pr/res_generic_m3.sym} 1540 -910 0 0 {name=R1
+W=36.35
+L=17.0
+model=res_generic_m3
 mult=1
 }
