@@ -1,4 +1,4 @@
-timestamp 1669869171
+timestamp 1669871065
 version 8.3
 tech sky130A
 style ngspice()
@@ -40,7 +40,6 @@ use zig-zag zig-zag_1[0:12:1768][0:0:0] 1 0 53502 0 1 330748
 use Cascode_Amp Cascode_Amp_0 0 -1 166000 1 0 311422
 use SCPW_M2_498um SCPW_M2_498um_0 0 -1 325960 1 0 372013
 use SCPW_M1_498p3um SCPW_M1_498p3um_0 0 -1 325844 1 0 294933
-use contact contact_3 1 0 42767 0 1 476624
 use contact$4 contact$4_24 1 0 41934 0 1 476628
 use contact$4 contact$4_25 1 0 43709 0 1 476628
 use contact$4 contact$4_28 1 0 42775 0 1 476628
@@ -59,47 +58,44 @@ use contact$17 contact$17_0 1 0 505916 0 1 415252
 use contact$19 contact$19_1 1 0 513831 0 1 453047
 use VGA_final VGA_final_0 0 1 148872 -1 0 625407
 use contact$4 contact$4_29 1 0 13411 0 1 641350
-use contact contact_2 1 0 13415 0 1 641340
 use LNA_final LNA_final_0 0 1 404562 -1 0 641721
 use contact$12 contact$12_0 0 -1 575056 1 0 547972
-use esd_2 esd_2_0 1 0 513298 0 1 557854
 use contact$2 contact$2_1 0 -1 509999 -1 0 557826
-use contact$22 contact$22_1 1 0 509967 0 1 554615
-use contact$22 contact$22_2 1 0 509994 0 1 559604
-use contact$24 contact$24_0 1 0 509967 0 1 554615
-use contact$24 contact$24_2 1 0 509994 0 1 559604
-use contact$26 contact$26_1 1 0 509967 0 1 554615
-use contact$26 contact$26_2 1 0 509994 0 1 559604
-use contact$28 contact$28_0 1 0 509994 0 1 559604
-use contact contact_0 0 -1 515812 -1 0 557864
 use contact$2 contact$2_0 0 -1 515842 -1 0 557834
+use contact$22 contact$22_1 1 0 509967 0 1 554615
 use contact$22 contact$22_0 1 0 515854 0 1 554615
-use contact$22 contact$22_3 1 0 515835 0 1 559604
 use contact$24 contact$24_1 1 0 515854 0 1 554615
-use contact$24 contact$24_3 1 0 515835 0 1 559604
+use contact$24 contact$24_0 1 0 509967 0 1 554615
+use contact$26 contact$26_1 1 0 509967 0 1 554615
 use contact$26 contact$26_0 1 0 515854 0 1 554615
+use contact$22 contact$22_3 1 0 515835 0 1 559604
+use contact$22 contact$22_2 1 0 509994 0 1 559604
+use contact$24 contact$24_3 1 0 515835 0 1 559604
+use contact$24 contact$24_2 1 0 509994 0 1 559604
 use contact$26 contact$26_3 1 0 515835 0 1 559604
+use contact$26 contact$26_2 1 0 509994 0 1 559604
 use contact$28 contact$28_1 1 0 515835 0 1 559604
+use contact$28 contact$28_0 1 0 509994 0 1 559604
+use esd esd_0 1 0 513298 0 1 557854
 use contact$19 contact$19_0 1 0 513831 0 1 626510
 use contact$20 contact$20_0 1 0 526348 0 1 597179
 use contact$4 contact$4_30 1 0 526349 0 1 649449
+use esd_diodes esd_diodes_0 0 1 10205 -1 0 690250
 use contact$4 contact$4_26 1 0 10150 0 1 682774
 use contact$2 contact$2_7 1 0 8330 0 1 684708
-use contact$30 contact$30_5 1 0 8322 0 1 684705
-use esd_diodes esd_diodes_0 0 1 10205 -1 0 690250
-use contact$2 contact$2_5 1 0 10144 0 1 684708
-use contact$30 contact$30_0 1 0 10153 0 1 684720
-use contact$2 contact$2_6 1 0 13400 0 1 684708
-use contact$30 contact$30_3 1 0 13408 0 1 684735
 use contact$2 contact$2_3 1 0 8330 0 1 687976
 use contact$30 contact$30_4 1 0 8348 0 1 687949
+use contact$30 contact$30_5 1 0 8322 0 1 684705
 use esd_diodes esd_diodes_1 0 1 10205 -1 0 693497
+use contact$2 contact$2_5 1 0 10144 0 1 684708
 use contact$2 contact$2_2 1 0 10136 0 1 687958
-use contact contact_1 1 0 10106 0 1 687988
+use contact$30 contact$30_0 1 0 10153 0 1 684720
 use contact$30 contact$30_1 1 0 10105 0 1 687946
 use contact$4 contact$4_27 1 0 10095 0 1 687988
+use contact$2 contact$2_6 1 0 13400 0 1 684708
 use contact$2 contact$2_4 1 0 13400 0 1 687959
 use contact$30 contact$30_2 1 0 13427 0 1 687971
+use contact$30 contact$30_3 1 0 13408 0 1 684735
 use contact$12 contact$12_1 1 0 518026 0 1 695541
 use contact$14 contact$14_0 1 0 518026 0 1 695541
 port "io_analog[4]" 495 329294 702300 334294 704800 m5
@@ -1524,7 +1520,7 @@ node "dw_10605_686997#" 0 0 10605 686997 dnw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dw_5053_472809#" 0 0 5053 472809 isosub 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 device devres sky130_fd_pr__res_generic_m3 575070 156092 575071 156093 3400 7270 "m3_575070_156092#" 0 0 "vssa1" 7270 0 "vssd1" 7270 0
-merge "esd_2_0/vdd" "contact$12_0/m3_n7133_n6033#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/vdd" "contact$12_0/m3_n7133_n6033#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "contact$12_0/m3_n7133_n6033#" "RF_switch_0/Vdd"
 merge "RF_switch_0/Vdd" "vdda1"
 merge "vdda1" "out_buf_0/vdd"
@@ -1803,7 +1799,7 @@ merge "contact$4_1/VSUBS" "SCPW_M1_999p9um_0/VSUBS"
 merge "SCPW_M1_999p9um_0/VSUBS" "VSUBS"
 merge "out_buf_0/in" "full_IC_1_0/out" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "full_IC_1_0/out" "m1_471628_442176#"
-merge "esd_2_0/out" "contact$19_1/m2_n77_n157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/out" "contact$19_1/m2_n77_n157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "contact$19_1/m2_n77_n157#" "m2_513426_556994#"
 merge "m2_513426_556994#" "full_IC_1_0/ref_in"
 merge "full_IC_1_0/ref_in" "contact$17_0/m2_n157_n77#"
@@ -1840,9 +1836,9 @@ merge "io_analog[6]" "VGA_final_0/Gnd"
 merge "VGA_final_0/Gnd" "dw_61760_544908#"
 merge "dw_61760_544908#" "m5_203279_565294#"
 merge "contact$19_0/m2_n77_n157#" "io_analog[0]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "io_analog[0]" "esd_2_0/in"
-merge "esd_2_0/in" "esd_2_0/r_250$1_0/m1_112_2650#"
-merge "esd_2_0/r_250$1_0/m1_112_2650#" "m2_513352_560585#"
+merge "io_analog[0]" "esd_0/in"
+merge "esd_0/in" "esd_0/r_250$1_0/m1_112_2650#"
+merge "esd_0/r_250$1_0/m1_112_2650#" "m2_513352_560585#"
 merge "contact$30_0/m1_n320_n320#" "esd_diodes_0/in" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "esd_diodes_0/in" "contact$4_26/m2_n317_n317#"
 merge "contact$4_26/m2_n317_n317#" "m2_9712_682286#"
@@ -1857,10 +1853,10 @@ merge "zig-zag_0[1]/contact$9_1/m3_n38_n203#" "io_in[9]"
 merge "contact$14_0/m4_n6998_n5878#" "contact$12_1/m3_n7133_n6033#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "contact$12_1/m3_n7133_n6033#" "m4_510594_688389#"
 merge "m4_510594_688389#" "vssa1"
-merge "vssa1" "esd_2_0/r_250$1_0/li_628_2666#"
-merge "esd_2_0/r_250$1_0/li_628_2666#" "esd_2_0/esd_diodes$1_0/VSS"
-merge "esd_2_0/esd_diodes$1_0/VSS" "esd_2_0/vss"
-merge "esd_2_0/vss" "out_buf_0/vss"
+merge "vssa1" "esd_0/r_250$1_0/li_628_2666#"
+merge "esd_0/r_250$1_0/li_628_2666#" "esd_0/esd_diodes$1_0/VSS"
+merge "esd_0/esd_diodes$1_0/VSS" "esd_0/vss"
+merge "esd_0/vss" "out_buf_0/vss"
 merge "out_buf_0/vss" "full_IC_1_0/slopebuf_0/tgate_1_1/vss"
 merge "full_IC_1_0/slopebuf_0/tgate_1_1/vss" "full_IC_1_0/full_vco_1_0/vco_core_8_0/vss"
 merge "full_IC_1_0/full_vco_1_0/vco_core_8_0/vss" "full_IC_1_0/sspd_0/vss"
@@ -1911,13 +1907,12 @@ merge "zig-zag_1[4]/contact$9_0/m3_n38_n203#" "sar_adc_0/Bit6" 0 0 0 0 0 0 0 0 0
 merge "sar_adc_0/Bit6" "zig-zag_1[4]/contact$9_1/m3_n38_n203#"
 merge "zig-zag_1[4]/contact$9_1/m3_n38_n203#" "io_out[18]"
 merge "Standalone_mosfet_32f_1/gnd" "dw_107080_186170#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "esd_2_0/esd_diodes$1_1/in" "esd_2_0/w_n2576_n1292#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "esd_2_0/w_n2576_n1292#" "w_510722_556562#"
 merge "esd_diodes_1/dw_4600_400#" "dw_10605_686997#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "VGA_final_0/Vctrl" "io_analog[8]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/esd_diodes$1_0/in" "esd_0/w_1834_n1292#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/w_1834_n1292#" "w_515132_556562#"
 merge "RF_switch_0/Gnd" "dw_477026_165492#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dw_477026_165492#" "vssd1"
-merge "esd_2_0/dw_1628_n1498#" "dw_514926_556356#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "zig-zag_1[9]/contact$9_0/m3_n38_n203#" "sar_adc_0/Bit1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sar_adc_0/Bit1" "zig-zag_1[9]/contact$9_1/m3_n38_n203#"
 merge "zig-zag_1[9]/contact$9_1/m3_n38_n203#" "io_out[23]"
@@ -1932,7 +1927,7 @@ merge "contact$20_0/m1_n288_n288#" "m2_526048_596807#"
 merge "m2_526048_596807#" "out_buf_0/out"
 merge "out_buf_0/out" "m1_526048_510660#"
 merge "Standalone_mosfet_150f_1/gnd" "dw_105778_110986#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "esd_2_0/dw_n2782_n1498#" "dw_510516_556356#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/dw_n2782_n1498#" "dw_510516_556356#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "zig-zag_1[6]/contact$9_0/m3_n38_n203#" "sar_adc_0/Bit4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sar_adc_0/Bit4" "zig-zag_1[6]/contact$9_1/m3_n38_n203#"
 merge "zig-zag_1[6]/contact$9_1/m3_n38_n203#" "io_out[20]"
@@ -1943,9 +1938,10 @@ merge "VGA_final_0/Vgg_1v2" "io_analog[7]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "zig-zag_1[3]/contact$9_0/m3_n38_n203#" "sar_adc_0/Bit7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sar_adc_0/Bit7" "zig-zag_1[3]/contact$9_1/m3_n38_n203#"
 merge "zig-zag_1[3]/contact$9_1/m3_n38_n203#" "io_out[17]"
-merge "esd_2_0/esd_diodes$1_0/in" "esd_2_0/w_1834_n1292#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "esd_2_0/w_1834_n1292#" "w_515132_556562#"
 merge "VGA_final_0/Vdd_1v8" "io_analog[5]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/esd_diodes$1_1/in" "esd_0/w_n2576_n1292#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/w_n2576_n1292#" "w_510722_556562#"
 merge "LNA_final_0/Vgg_1v2" "io_analog[3]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "LNA_final_0/Vdd_1v8" "io_analog[2]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "esd_0/dw_1628_n1498#" "dw_514926_556356#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "Standalone_mosfet_150f_0/gnd" "dw_332505_29958#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
